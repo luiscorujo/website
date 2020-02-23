@@ -45,7 +45,7 @@
                         <a style="color: rgb(75,101,210)">aaa</a>
                     </li>
                     <li class="nav-item" style="border: 1px solid white; border-radius: 5px; max-width: 100px">
-                        <a href="pdfs/cv.pdf" target="_blankthesitewizard.com" class="nav-link" data-toggle="collapse" style="color: white; text-align: center">Resume</a>
+                        <a href="pdfs/resume.pdf"  class="nav-link" data-toggle="collapse" style="color: white; text-align: center">Resume</a>
                     </li>
                 </ul>
 
@@ -663,14 +663,14 @@
 
             var targetHref = $(this).attr('href');
 
-            if (targetHref !== 'pdfs/tfg.pdf') {
+            if (targetHref !== 'pdfs/resume.pdf') {
 
                 $('html, body').animate({
                     scrollTop: $(targetHref).offset().top - headerHeight // Add it to the calculation here
                 }, 'slow');
 
             } else {
-                window.open("pdfs/tfg.pdf", "_blank");
+                window.open("pdfs/resume.pdf", "_blank");
             }
 
             e.preventDefault();
