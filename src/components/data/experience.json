@@ -1,0 +1,76 @@
+[
+  {
+    "id": 0,
+    "title": "Software Development Engineer II",
+    "company": "Amazon",
+    "url": "https://aws.amazon.com/workspaces/thin-client/",
+    "description": "I'm part of the team that developed and launched the new AWS WorkSpaces Thin Client service",
+    "startDate": "Jan 2023",
+    "endDate": "Present",
+    "links": [
+      {"text": "AWS News Blog",
+        "url": "https://aws.amazon.com/blogs/aws/new-amazon-workspaces-thin-client/",
+        "icon": "icon"
+      },
+      {
+        "text": "TechCrunch",
+        "url": "https://techcrunch.com/2023/11/27/amazons-new-195-thin-client-looks-just-like-a-fire-tv-cube/",
+        "icon": ""
+      }],
+    "skills": ["Java", "JavaScript", "DynamoDB", "CDK"]
+  },
+  {
+    "id": 1,
+    "title": "Software Development Engineer",
+    "company": "Amazon",
+    "url": "https://aws.amazon.com/workmail/",
+    "description": "I was a member of the WorkMail team. In particular, I led the design and development of the 'Impersonation Roles' project, allowing secure programmatic access to mailboxes. Additionally, I contributed to features like 'Mobile Device Access Overrides' and 'Mobile Device Access Rules', giving customers more control over their mailboxes.",
+    "startDate": "Jan 2021",
+    "endDate": "Dec 2022",
+    "links": [
+      {"text": "Impersonation Roles",
+        "url": "https://aws.amazon.com/about-aws/whats-new/2022/10/amazon-workmail-supports-impersonation-roles/",
+        "icon": "icon"
+      },
+      {
+        "text": "Device Overrides",
+        "url": "https://aws.amazon.com/about-aws/whats-new/2021/10/amazon-workmail-mobile-device-access-mdm/",
+        "icon": ""
+      }
+    ],
+    "skills": ["Java", "Python", "C++"]
+  },
+  {
+    "id": 2,
+    "title": "Visiting Researcher",
+    "company": "MIT",
+    "url": "https://github.com/luiscorujo/HappyHorseMeter",
+    "description":
+      "Developed an emotion recognition algorithm for horses using image classifiers and convolutional neural networks. I also implemented features for the Climate Colab platform",
+    "startDate": "Jul 2019",
+    "endDate": "Feb 2020",
+    "links": [
+      {
+        "text": "HappyHorseMeter",
+        "url": "https://arxiv.org/abs/2105.11953",
+        "icon": "icon"
+      },
+      {
+        "text": "ClimateColab",
+        "url": "https://climate.mit.edu/users/climate-colab",
+        "icon": "icon"
+      }
+    ],
+    "skills": ["Python", "Tensorflow", "Java", "MySql"]
+  },
+  {
+    "id": 3,
+    "title": "Software Engineer Intern",
+    "company": "Telefonica",
+    "url": "https://aura.telefonica.com/movistarhome",
+    "description": "I was part of the Movistar Home team, where I contributed to the development of backend tests",
+    "startDate": "Jan 2019",
+    "endDate": "Jun 2019",
+    "skills": ["Python"]
+  }
+]

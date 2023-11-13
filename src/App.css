@@ -1,38 +1,357 @@
 .App {
-  text-align: center;
+  background-color: white;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-family: Helvetica;
+  height: 100%;
+  max-width:2500px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (min-width: 1200px) {
+  .App {
+    padding-left: 12%;
+    padding-right: 12%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media (min-width: 1500px) {
+  .App {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
+
+@media (min-width: 1800px) {
+  .App {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
+
+
+/* === Left side === */
+
+.LeftColumn {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  max-height: 100vh;
+  position:sticky;
+  top:0;
+}
+
+@media (max-width: 992px) {
+  .LeftColumn {
+    position:static;
+  }
+}
+
+.LeftColumn_TopContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Intro {
+  padding-left: 20px;
+}
+
+@media (max-width: 992px) {
+  .Intro {
+    padding-top: 100px;
+  }
+}
+
+.Sections {
+  padding-top: 30px;
+  padding-left: 8px;
+}
+
+/* Hide the div when the viewport width is below 768px, which is smaller than Bootstrap's md */
+@media (max-width: 992px) {
+  .Sections {
+    display: none;
+  }
+}
+
+.Sections_List {
+  border: none !important; /* To remove the border */
+}
+
+.Sections_List .Sections_Item {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: start;
 }
 
-.App-link {
-  color: #61dafb;
+.Sections_Item {
+  background-color: transparent !important; /* Override Bootstrap's default background color */
+  border-color: transparent !important; /* Override Bootstrap's default border color */
+  color: inherit !important; /* Override Bootstrap's default text color */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.Sections_Item.active .HorizontalLine{
+  width: 80px;
+  border-top: 2px solid black;
+}
+
+.Sections_Item:hover .HorizontalLine{
+  width: 80px;
+  border-top: 2px solid black;
+}
+
+.Sections_Item.active .SectionsTitle{
+  font-weight: bold;
+}
+
+.Sections_Item:hover .SectionsTitle{
+  font-weight: bold;
+}
+
+.HorizontalLine {
+  border-top: 1px solid black;
+  height: 0;
+  width: 40px;
+  margin-right: 15px;
+}
+
+.Contact {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.Contact_Icon {
+  padding-right: 20px;
+  color: rgb(70, 70, 70);
+}
+
+.Contact_Icon:hover {
+  color: black;
+}
+
+
+/* === Right side === */
+
+.RightColumn {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+
+.About {
+  /*background-color: red;*/
+  padding-left: 10px;
+  color: rgb(50, 50, 50);
+}
+
+.Experience {
+  padding-top: 100px;
+}
+
+.Experience_Title {
+  padding-left: 10px;
+}
+
+.ExperienceCard {
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 992px) {
+  .ExperienceCard:hover {
+    border: 1px solid black;
+    background-color: rgb(250,250,250);
+    transition: background-color 0.5s ease;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (min-width: 992px) {
+  .ExperienceCard:hover .ArrowIconExperience {
+    transform: rotate(-45deg) translate(7px, 3px);
+    transition: transform 0.3s ease;
   }
+}
+
+@media (min-width: 992px) {
+  .ExperienceCard:hover .ArrowIconProjects {
+    transform: rotate(-45deg) translate(7px, 3px);
+    transition: transform 0.3s ease;
+  }
+}
+
+@media (min-width: 992px) {
+  .ExperienceCard:hover .ExperienceCard_Title {
+    color: #0652ff;
+  }
+}
+
+.ExperienceCard_DateCol {
+  color: rgb(70, 70, 70);
+  font-size: 14px;
+}
+
+.ExperienceCard_Info {
+}
+
+.ArrowIconExperience {
+  margin-left: 5px;
+  padding-left: 10px;
+  padding-bottom: 12px;
+  transform: rotate(-45deg);
+}
+
+.ArrowIconProjects {
+  margin-left: 5px;
+  padding-left: 10px;
+  transform: rotate(-45deg);
+}
+
+.ExperienceCard_Title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ExperienceCard_Url {
+  text-decoration: none;
+  color: black;
+}
+
+.ExperienceCard_Description {
+  color: rgb(50, 50, 50);
+}
+
+.Projects {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.Projects_Title {
+  padding-left: 10px;
+}
+
+.ProjectCard_Url {
+  text-decoration: none;
+  color: black;
+}
+
+.ProjectCard {
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 992px) {
+  .ProjectCard:hover {
+    border: 1px solid black;
+    background-color: rgb(250,250,250);
+    transition: background-color 0.5s ease;
+  }
+}
+
+@media (min-width: 992px) {
+  .ProjectCard:hover .ArrowIconExperience {
+    transform: rotate(-45deg) translate(7px, 3px);
+    transition: transform 0.3s ease;
+  }
+}
+
+@media (min-width: 992px) {
+  .ProjectCard:hover .ArrowIconProjects {
+    transform: rotate(-45deg) translate(7px, 3px);
+    transition: transform 0.3s ease;
+  }
+}
+
+@media (min-width: 992px) {
+  .ProjectCard:hover .ProjectCard_Title {
+    color: #0652ff;
+  }
+}
+
+.ProjectCard_ImageCol {
+  display: flex;
+  align-items: flex-start;
+}
+
+.ProjectCard_Image {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+@media (max-width: 575px) {
+  .ProjectCard_Image {
+    margin-top:20px;
+  }
+}
+
+.ProjectCard_Info {
+}
+
+.ProjectCard_Title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-width: 58ch;
+}
+
+.ProjectCard_Description {
+  color: rgb(50, 50, 50);
+}
+
+.Links {
+  padding-top: 15px;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 10px;
+}
+
+.Links_Item {
+  margin-right: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Links_Item:hover {
+  color: #0652ff;
+}
+
+.Links_Item:hover .Link_Text {
+  color: #0652ff;
+}
+
+.Link_Icon {
+  margin-right: 5px;
+}
+
+.Link_Text {
+  font-size: 14px;
+  color: black;
+  text-decoration: none;
+}
+
+.Skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+
+.Skill_Item {
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  padding: 6px;
+  margin-right: 10px;
+  margin-top: 10px;
+
+  font-size: 12px;
+  font-weight: bold;
+
+  color: #0652ff;
+  border: 1px solid #0652ff;
 }
