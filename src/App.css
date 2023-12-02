@@ -58,7 +58,8 @@
 
 @media (max-width: 992px) {
   .Intro {
-    padding-top: 100px;
+    padding-top: 80px;
+    padding-left: 10px;
   }
 }
 
@@ -123,6 +124,13 @@
   padding-top: 20px;
 }
 
+@media (max-width: 992px) {
+  .Contact {
+    padding-left: 10px;
+    padding-bottom: 80px;
+  }
+}
+
 .Contact_Icon {
   padding-right: 20px;
   color: rgb(70, 70, 70);
@@ -142,7 +150,6 @@
 }
 
 .About {
-  /*background-color: red;*/
   padding-left: 10px;
   color: rgb(50, 50, 50);
 }

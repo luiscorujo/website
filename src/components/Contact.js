@@ -4,7 +4,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faAddressCard } from '@fortawesome/free-solid-svg-icons';
-
+import cv from "./data/resume.pdf";
 
 function Contact() {
     return(
@@ -15,7 +15,7 @@ function Contact() {
             <a href="https://www.linkedin.com/in/luis-corujo/" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon className="Contact_Icon" icon={faLinkedin} size="2x" />
             </a>
-            <a href='./data/tempcv.pdf' target="_blank" rel="noopener noreferrer">
+            <a href={cv} target="_blank">
                 <FontAwesomeIcon className="Contact_Icon" icon={faAddressCard} size="2x" />
             </a>
             <a href="mailto: luis3zc@gmail.com" target="_blank" rel="noopener noreferrer">
