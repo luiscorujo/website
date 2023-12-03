@@ -53,12 +53,16 @@ function App() {
     });
 
     function updateAboutPaddingTop() {
-        const containerHeight = document.querySelector('.LeftColumn').offsetHeight;
-        const introItem = document.querySelector('.LeftColumn_TopContainer').offsetHeight;
-        const contactItem = document.querySelector('.Contact').offsetHeight;
-        const paddingTop = (containerHeight - introItem - contactItem) / 3.65;
-        if (paddingTop > 0) {
-            setAboutPaddingTop(`${paddingTop}px`);
+        if (window.innerWidth > 992) {
+            const containerHeight = document.querySelector('.LeftColumn').offsetHeight;
+            const introItem = document.querySelector('.LeftColumn_TopContainer').offsetHeight;
+            const contactItem = document.querySelector('.Contact').offsetHeight;
+            const paddingTop = (containerHeight - introItem - contactItem) / 3.65;
+            if (paddingTop > 0) {
+                setAboutPaddingTop(`${paddingTop}px`);
+            }
+        } else {
+            setAboutPaddingTop("40px");
         }
     }
 

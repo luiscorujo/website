@@ -7,6 +7,12 @@
   max-width:2500px;
 }
 
+@media (max-width: 992px) {
+  html, body {
+    overflow-x: hidden;
+  }
+}
+
 @media (min-width: 1200px) {
   .App {
     padding-left: 12%;
@@ -127,7 +133,6 @@
 @media (max-width: 992px) {
   .Contact {
     padding-left: 10px;
-    padding-bottom: 80px;
   }
 }
 
@@ -156,6 +161,12 @@
 
 .Experience {
   padding-top: 100px;
+}
+
+@media (max-width: 992px) {
+  .Experience {
+    padding-top: 40px;
+  }
 }
 
 .Experience_Title {
@@ -235,6 +246,13 @@
 .Projects {
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+@media (max-width: 992px) {
+  .Projects {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
 }
 
 .Projects_Title {
