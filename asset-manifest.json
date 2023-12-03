@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.1085a265.css",
-    "main.js": "/static/js/main.d0ee4da6.js",
+    "main.js": "/static/js/main.38c0f5e3.js",
     "static/js/787.9ad6ad7d.chunk.js": "/static/js/787.9ad6ad7d.chunk.js",
     "static/media/hhm.png": "/static/media/hhm.6e079cb123d6bee7b6ba.png",
     "static/media/tradertoolbar.png": "/static/media/tradertoolbar.8f78b8fba73ceb0bd97a.png",
@@ -10,11 +10,11 @@
     "static/media/resume.pdf": "/static/media/resume.51453e824ce45bad4dbb.pdf",
     "index.html": "/index.html",
     "main.1085a265.css.map": "/static/css/main.1085a265.css.map",
-    "main.d0ee4da6.js.map": "/static/js/main.d0ee4da6.js.map",
+    "main.38c0f5e3.js.map": "/static/js/main.38c0f5e3.js.map",
     "787.9ad6ad7d.chunk.js.map": "/static/js/787.9ad6ad7d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1085a265.css",
-    "static/js/main.d0ee4da6.js"
+    "static/js/main.38c0f5e3.js"
   ]
 }
