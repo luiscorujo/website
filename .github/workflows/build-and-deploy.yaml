@@ -1,0 +1,23 @@
+---
+name: Build and deploy to github pages
+on:
+  push:
+    branches: [master]
+jobs:
+  build-and-deploy:
+    name: Build and deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Build
+        run: npm install
+
+      - name: Deploy
+        run: |
+          git config --global user.name 'Luis Corujo'
+          git config --global user.email 'luis3zc@gmail.com'
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          npm run deploy

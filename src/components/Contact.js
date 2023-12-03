@@ -15,7 +15,7 @@ function Contact() {
             <a href="https://www.linkedin.com/in/luis-corujo/" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon className="Contact_Icon" icon={faLinkedin} size="2x" />
             </a>
-            <a href={cv} target="_blank">
+            <a href={cv} target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon className="Contact_Icon" icon={faAddressCard} size="2x" />
             </a>
             <a href="mailto: luis3zc@gmail.com" target="_blank" rel="noopener noreferrer">
