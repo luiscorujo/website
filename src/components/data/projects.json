@@ -17,18 +17,18 @@
   },
   {
     "id": 2,
+    "title": "Game of Life",
+    "url": "https://luiscorujo.github.io/game-of-life/",
+    "description": "A rust implementation of Conway's Game of Life",
+    "links": null,
+    "skills": ["Rust", "Javascript"]
+  },
+  {
+    "id": 3,
     "title": "nuriarevuelta.com",
     "url": "https://www.nuriarevuelta.com/#/",
     "description": "Portfolio website of a fashion designer",
     "links": null,
-    "skills": ["React", "Bootstrap"]
-  },
-  {
-    "id": 3,
-    "title": "luiscorujo.com",
-    "url": "https://github.com/luiscorujo/luiscorujo.github.io",
-    "description": "My portfolio website",
-    "links": null,
-    "skills": ["React", "Bootstrap"]
+    "skills": ["React"]
   }
 ]
