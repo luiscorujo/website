@@ -6,10 +6,11 @@ import tfgImage from './images/tradertoolbar.png'
 import nuriarevueltaImage from './images/nuriarevuelta.png'
 import hhmImage from './images/hhm.png'
 import luiscorujoImage from './images/luiscorujo.png'
+import gameOfLife from './images/gameoflife.png'
 
 
 const Projects = forwardRef(function Projects(props, ref) {
-    const images = [tfgImage, hhmImage, nuriarevueltaImage, luiscorujoImage]
+    const images = [tfgImage, hhmImage, gameOfLife, nuriarevueltaImage]
     // TODO: Add rest of projects
     // TODO: Add page for all projects
     return (
