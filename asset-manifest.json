@@ -1,20 +1,21 @@
 {
   "files": {
     "main.css": "/static/css/main.1085a265.css",
-    "main.js": "/static/js/main.dcd2a9c3.js",
+    "main.js": "/static/js/main.436595a9.js",
     "static/js/787.9ad6ad7d.chunk.js": "/static/js/787.9ad6ad7d.chunk.js",
     "static/media/hhm.png": "/static/media/hhm.6e079cb123d6bee7b6ba.png",
     "static/media/tradertoolbar.png": "/static/media/tradertoolbar.8f78b8fba73ceb0bd97a.png",
     "static/media/nuriarevuelta.png": "/static/media/nuriarevuelta.fb3dbb136ffb46ee37d6.png",
+    "static/media/gameoflife.png": "/static/media/gameoflife.7409b6ffa1367a118cc2.png",
     "static/media/luiscorujo.png": "/static/media/luiscorujo.10fdfad4c6fc1e71fa91.png",
     "static/media/resume.pdf": "/static/media/resume.51453e824ce45bad4dbb.pdf",
     "index.html": "/index.html",
     "main.1085a265.css.map": "/static/css/main.1085a265.css.map",
-    "main.dcd2a9c3.js.map": "/static/js/main.dcd2a9c3.js.map",
+    "main.436595a9.js.map": "/static/js/main.436595a9.js.map",
     "787.9ad6ad7d.chunk.js.map": "/static/js/787.9ad6ad7d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1085a265.css",
-    "static/js/main.dcd2a9c3.js"
+    "static/js/main.436595a9.js"
   ]
 }
