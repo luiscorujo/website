@@ -3,23 +3,20 @@ import { forwardRef } from 'react';
 
 
 const About = forwardRef(function About(props, ref) {
-    return(
-        <div className="About" ref={ref} style={{paddingTop: props.aboutPaddingTop}}>
+    return (
+        <div className="About" ref={ref} style={{ paddingTop: props.aboutPaddingTop }}>
             <p>
-                My fascination with engineering and science traces back to my childhood,
-                where my love for computers ignited during countless hours immersed in video games.
-                As I grew older, this passion seamlessly evolved and it continues to thrive today.
+                I've been passionate about engineering and science since I was a kid.
+                I spent hours playing video games, which sparked my love for computers.
+                Over the years, that interest kept growing, and it's still a big part of my life today.
             </p>
             <p>
-                These days, I enjoy the challenges from my job at AWS.
-                Problem-solving is not just a job requirement but a source of satisfaction for me.
-                I thrive when presented complex issues and pushing the boundaries of what's possible.
-                Beyond the workplace, I'm curious about the latest trends in AI and advances in space exploration. 🚀
+                Right now, I work at AWS, and I really enjoy the problem-solving aspect of my job.
+                I like tackling tough challenges and figuring things out—it's what keeps things interesting for me.
             </p>
             <p>
-                Away from the screens, I am an adventurer at heart, always seeking the thrill of adrenaline.
-                I'm a certified scuba diver and skydiver. I run marathons, and I love the mountains,
-                whether it's snowboarding down their slopes or hiking to their peaks.
+                When I'm not at my computer, I seek adventure. I'm a certified scuba diver and skydiver,
+                I run marathons, and I'm always up for the mountains—whether it's hiking up or snowboarding down.
             </p>
         </div>
     );

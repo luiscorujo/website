@@ -1,27 +1,27 @@
 [
   {
     "id": 0,
-    "title": "AlphaPy",
-    "url": "https://github.com/luiscorujo/TFG",
-    "description": "An autonomous trading algorithm for the Forex market",
-    "links": null,
-    "skills": ["Python", "MySql"]
-  },
-  {
-    "id": 1,
     "title": "HappyHorseMeter",
     "url": "https://github.com/luiscorujo/HappyHorseMeter",
-    "description": "An emotion recognition algorithm for horses",
+    "description": "A machine learning algorithm that predicts the emotions of horses from images",
     "links": null,
     "skills": ["Tensorflow", "Python"]
   },
   {
-    "id": 2,
-    "title": "Game of Life",
-    "url": "https://luiscorujo.github.io/game-of-life/",
-    "description": "A rust implementation of Conway's Game of Life",
+    "id": 1,
+    "title": "AlphaPy",
+    "url": "https://github.com/luiscorujo/TFG",
+    "description": "A trading algorithm for the Forex market",
     "links": null,
-    "skills": ["Rust", "Javascript"]
+    "skills": ["Python", "MySQL"]
+  },
+  {
+    "id": 2,
+    "title": "The Songs Of The World",
+    "url": "https://thesongsoftheworld.com",
+    "description": "A website to discover and share songs",
+    "links": null,
+    "skills": ["React", "Python", "AWS"]
   },
   {
     "id": 3,
@@ -30,5 +30,13 @@
     "description": "Portfolio website of a fashion designer",
     "links": null,
     "skills": ["React"]
+  },
+  {
+    "id": 4,
+    "title": "Game of Life",
+    "url": "https://game-of-life.luiscorujo.com",
+    "description": "A rust implementation of Conway's Game of Life",
+    "links": null,
+    "skills": ["Rust", "Javascript"]
   }
 ]

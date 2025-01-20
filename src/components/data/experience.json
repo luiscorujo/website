@@ -17,7 +17,7 @@
         "url": "https://techcrunch.com/2023/11/27/amazons-new-195-thin-client-looks-just-like-a-fire-tv-cube/",
         "icon": ""
       }],
-    "skills": ["Java", "JavaScript", "DynamoDB", "CDK"]
+    "skills": ["Java", "JavaScript", "DynamoDB", "AWS"]
   },
   {
     "id": 1,
@@ -38,7 +38,7 @@
         "icon": ""
       }
     ],
-    "skills": ["Java", "Python", "C++"]
+    "skills": ["Java", "Python", "C++", "AWS"]
   },
   {
     "id": 2,
@@ -68,7 +68,7 @@
     "title": "Software Engineer Intern",
     "company": "Telefonica",
     "url": "https://aura.telefonica.com/movistarhome",
-    "description": "I was part of the Movistar Home team, where I contributed to the development of backend tests",
+    "description": "I was part of the Movistar Home team, where I developed backend tests",
     "startDate": "Jan 2019",
     "endDate": "Jun 2019",
     "skills": ["Python"]
