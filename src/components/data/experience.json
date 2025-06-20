@@ -44,7 +44,7 @@
     "id": 2,
     "title": "Visiting Researcher",
     "company": "MIT",
-    "url": "https://github.com/luiscorujo/HappyHorseMeter",
+    "url": "https://cci.mit.edu/",
     "description":
       "Developed an emotion recognition algorithm for horses using image classifiers and convolutional neural networks. I also implemented features for the Climate Colab platform",
     "startDate": "Jul 2019",
