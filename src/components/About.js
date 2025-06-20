@@ -11,7 +11,7 @@ const About = forwardRef(function About(props, ref) {
                 Over the years, that interest kept growing, and it's still a big part of my life today.
             </p>
             <p>
-                Right now, I work at AWS, and I really enjoy the problem-solving aspect of my job.
+                Right now, I work at Amazon, and I really enjoy the problem-solving aspect of my job.
                 I like tackling tough challenges and figuring things out—it's what keeps things interesting for me.
             </p>
             <p>
