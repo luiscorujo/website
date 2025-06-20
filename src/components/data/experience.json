@@ -1,12 +1,23 @@
 [
   {
-    "id": 0,
+    "id": 3,
     "title": "Software Development Engineer II",
     "company": "Amazon",
-    "url": "https://aws.amazon.com/workspaces/thin-client/",
-    "description": "I'm part of the team that developed and launched the new AWS WorkSpaces Thin Client service",
-    "startDate": "Jan 2023",
+    "url": "https://www.amazon.com/",
+    "description": "I’m currently part of Amazon’s Product Catalog team.",
+    "startDate": "Jul 2025",
     "endDate": "Present",
+    "links": [],
+    "skills": []
+  },
+  {
+    "id": 3,
+    "title": "Software Development Engineer II",
+    "company": "AWS",
+    "url": "https://aws.amazon.com/workspaces/thin-client/",
+    "description": "I was part of the team that launched WorkSpaces ThinClient to the public at re:Invent. I designed and developed core features and microservices from the ground up, led the API design, and created reusable testing resources that streamlined integration testing and automated validation.",
+    "startDate": "Jan 2023",
+    "endDate": "Oct 2024",
     "links": [
       {"text": "AWS News Blog",
         "url": "https://aws.amazon.com/blogs/aws/new-amazon-workspaces-thin-client/",
@@ -20,9 +31,9 @@
     "skills": ["Java", "JavaScript", "DynamoDB", "AWS"]
   },
   {
-    "id": 1,
+    "id": 2,
     "title": "Software Development Engineer",
-    "company": "Amazon",
+    "company": "AWS",
     "url": "https://aws.amazon.com/workmail/",
     "description": "I was a member of the WorkMail team. In particular, I led the design and development of the 'Impersonation Roles' project, allowing secure programmatic access to mailboxes. Additionally, I contributed to features like 'Mobile Device Access Overrides' and 'Mobile Device Access Rules', giving customers more control over their mailboxes.",
     "startDate": "Jan 2021",
@@ -41,7 +52,7 @@
     "skills": ["Java", "Python", "C++", "AWS"]
   },
   {
-    "id": 2,
+    "id": 1,
     "title": "Visiting Researcher",
     "company": "MIT",
     "url": "https://cci.mit.edu/",
@@ -64,7 +75,7 @@
     "skills": ["Python", "Tensorflow", "Java", "MySQL"]
   },
   {
-    "id": 3,
+    "id": 0,
     "title": "Software Engineer Intern",
     "company": "Telefonica",
     "url": "https://www.movistar.es/blog/home/lo-que-necesitas-saber-movistar-home/",
