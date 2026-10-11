@@ -5,6 +5,7 @@ import Contact from "./components/Contact";
 import About from "./components/About";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
+import RetroView from "./retro/RetroView";
 
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
@@ -14,6 +15,7 @@ import { useRef, useState, useEffect } from 'react';
 
 function App() {
     const [aboutPaddingTop, setAboutPaddingTop] = useState("");
+    const [retroMode, setRetroMode] = useState(false);
 
     const aboutRef = useRef(null);
     const experienceRef = useRef(null);
@@ -31,33 +33,25 @@ function App() {
         projectsRef.current.scrollIntoView({behavior: 'smooth'});
     }
 
-    useEffect( () => {
-        // Initialize paddingTop after first render
-        updateAboutPaddingTop();
-        return () => {
-            // Cleanup logic (if any)
-        };
-    }, []);
-
     useEffect(() => {
-        const handleResize = () => {
-            updateAboutPaddingTop();
-        };
-
+        updateAboutPaddingTop();
+        const handleResize = () => updateAboutPaddingTop();
         window.addEventListener('resize', handleResize);
-
-        // Cleanup the event listener on component unmount
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    });
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
     function updateAboutPaddingTop() {
         if (window.innerWidth > 992) {
-            const containerHeight = document.querySelector('.LeftColumn').offsetHeight;
-            const introItem = document.querySelector('.LeftColumn_TopContainer').offsetHeight;
-            const contactItem = document.querySelector('.Contact').offsetHeight;
-            const paddingTop = (containerHeight - introItem - contactItem) / 3.65;
+            const left = document.querySelector('.LeftColumn');
+            const intro = document.querySelector('.Intro');
+            const sections = document.querySelector('.Sections');
+            const contact = document.querySelector('.Contact');
+            if (!left || !intro || !contact) return;
+            const stackHeight = intro.offsetHeight
+                + (sections ? sections.offsetHeight : 0)
+                + contact.offsetHeight;
+            // Same offset the old space-around layout used, so the name lines up with About.
+            const paddingTop = (left.clientHeight - stackHeight) / 3.65;
             if (paddingTop > 0) {
                 setAboutPaddingTop(`${paddingTop}px`);
             }
@@ -67,17 +61,19 @@ function App() {
     }
 
     return (
-        <Row className="App">
-            <Col lg={5} className="LeftColumn">
+        <>
+        {retroMode && <RetroView onExit={() => setRetroMode(false)}/>}
+        <Row className="App" aria-hidden={retroMode}>
+            <Col lg={5} className="LeftColumn" style={{ '--align-pad': aboutPaddingTop }}>
                     <div className="LeftColumn_TopContainer">
-                        <Intro/>
+                        <Intro onRocketClick={() => setRetroMode(true)}/>
                         <Sections
                             handleScrollToAbout={handleScrollToAbout}
                             handleScrollToExperience={handleScrollToExperience}
                             handleScrollToProjects={handleScrollToProjects}
                         />
+                        <Contact/>
                     </div>
-                    <Contact/>
             </Col>
             <Col lg={7} className="RightColumn">
                 <About ref={aboutRef} aboutPaddingTop={aboutPaddingTop}/>
@@ -85,6 +81,7 @@ function App() {
                 <Projects ref={projectsRef}/>
             </Col>
         </Row>
+        </>
     );
 }
 

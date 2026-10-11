@@ -6,7 +6,7 @@ import { forwardRef } from 'react';
 
 const Experience = forwardRef(function Experience(props, ref) {
     return (
-        <div className="Experience" ref={ref}>
+        <div className="Experience" id="experience" ref={ref}>
             <h5 className="Experience_Title">Experience</h5>
             {experience.map((item) => (
                 <ExperienceCard

@@ -7,10 +7,8 @@
   max-width:2500px;
 }
 
-@media (max-width: 992px) {
-  html, body {
-    overflow-x: hidden;
-  }
+html, body {
+  overflow-x: clip;
 }
 
 @media (min-width: 1200px) {
@@ -40,15 +38,22 @@
 .LeftColumn {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
+  align-self: flex-start;
+  height: 100vh;
   max-height: 100vh;
-  position:sticky;
-  top:0;
+  position: sticky;
+  top: 0;
+  padding-top: var(--align-pad, 0);
+  box-sizing: border-box;
 }
 
 @media (max-width: 992px) {
   .LeftColumn {
     position:static;
+    height: auto;
+    max-height: none;
+    padding-top: 0;
   }
 }
 
@@ -66,6 +71,38 @@
   .Intro {
     padding-top: 80px;
     padding-left: 10px;
+  }
+}
+
+/* The rocket is the secret door into retro mode */
+.Rocket {
+  background: none;
+  border: none;
+  padding: 0 2px;
+  font: inherit;
+  line-height: 1;
+  cursor: pointer;
+  display: inline-block;
+  transition: transform 0.25s ease, filter 0.25s ease;
+  animation: rocketIdle 3s ease-in-out infinite;
+}
+
+.Rocket:hover,
+.Rocket:focus-visible {
+  animation: none;
+  transform: translate(3px, -5px) rotate(-12deg) scale(1.2);
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  outline: none;
+}
+
+@keyframes rocketIdle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-2px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .Rocket {
+    animation: none;
   }
 }
 
@@ -127,7 +164,7 @@
   text-align: center;
   align-items: center;
   padding-left: 20px;
-  padding-top: 20px;
+  padding-top: 36px;
 }
 
 @media (max-width: 992px) {
@@ -175,6 +212,7 @@
 
 .ExperienceCard {
   padding: 10px;
+  border: 1px solid transparent;
   border-radius: 10px;
   margin-bottom: 20px;
 }
@@ -266,6 +304,7 @@
 
 .ProjectCard {
   padding: 10px;
+  border: 1px solid transparent;
   border-radius: 10px;
   margin-bottom: 20px;
 }
@@ -321,7 +360,6 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  min-width: 58ch;
 }
 
 .ProjectCard_Description {
@@ -340,6 +378,8 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  text-decoration: none;
+  color: inherit;
 }
 
 .Links_Item:hover {

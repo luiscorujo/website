@@ -14,7 +14,7 @@ const Projects = forwardRef(function Projects(props, ref) {
     // TODO: Add rest of projects
     // TODO: Add page for all projects
     return (
-        <div className="Projects" ref={ref}>
+        <div className="Projects" id="projects" ref={ref}>
             <h5 className="Projects_Title">Projects</h5>
             {projects.map((item) => (
                     <ProjectCard

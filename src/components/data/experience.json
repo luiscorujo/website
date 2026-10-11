@@ -1,10 +1,10 @@
 [
   {
-    "id": 3,
+    "id": 4,
     "title": "Software Development Engineer II",
     "company": "Amazon",
     "url": "https://www.amazon.com/",
-    "description": "I’m currently part of Amazon’s Catalog Relationships team. I Design, develop and maintain high-scale, low-latency services and data pipelines that power product relationships across the amazon catalog.",
+    "description": "I’m currently part of Amazon’s Catalog Relationships team. I design, develop and maintain high-scale, low-latency services and data pipelines that power product relationships across the Amazon catalog.",
     "startDate": "Jul 2025",
     "endDate": "Present",
     "links": [],
