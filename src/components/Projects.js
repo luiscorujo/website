@@ -2,11 +2,11 @@ import React from "react";
 import ProjectCard from './cards/ProjectCard';
 import projects from './data/projects.json';
 import {forwardRef} from 'react';
-import tfgImage from './images/tradertoolbar.png'
-import nuriarevueltaImage from './images/nuriarevuelta.png'
-import hhmImage from './images/hhm.png'
-import tsotwImage from './images/tsotwImage.png'
-import gameOfLife from './images/gameoflife.png'
+import tfgImage from './images/tradertoolbar.webp'
+import nuriarevueltaImage from './images/nuriarevuelta.webp'
+import hhmImage from './images/hhm.webp'
+import tsotwImage from './images/tsotwImage.webp'
+import gameOfLife from './images/gameoflife.webp'
 
 
 const Projects = forwardRef(function Projects(props, ref) {

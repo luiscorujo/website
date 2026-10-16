@@ -6,11 +6,11 @@ import { sfx } from '../sound';
 import { revealOnSmallScreens } from '../viewport';
 import useShelfKeys from '../useShelfKeys';
 import projects from '../../components/data/projects.json';
-import tfgImage from '../../components/images/tradertoolbar.png';
-import nuriarevueltaImage from '../../components/images/nuriarevuelta.png';
-import hhmImage from '../../components/images/hhm.png';
-import tsotwImage from '../../components/images/tsotwImage.png';
-import gameOfLife from '../../components/images/gameoflife.png';
+import tfgImage from '../../components/images/tradertoolbar.webp';
+import nuriarevueltaImage from '../../components/images/nuriarevuelta.webp';
+import hhmImage from '../../components/images/hhm.webp';
+import tsotwImage from '../../components/images/tsotwImage.webp';
+import gameOfLife from '../../components/images/gameoflife.webp';
 
 const IMAGES = [hhmImage, tfgImage, tsotwImage, nuriarevueltaImage, gameOfLife];
 const COLORS = ['green', 'purple', 'cyan', 'red', 'yellow', 'orange', 'blue'];
